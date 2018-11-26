@@ -49,37 +49,36 @@ function computer_move() { /*note the bracket format*/
   return machine_played;
 }
 
-
 function compare(you, machine){
 
-  var verdict = 'lose';
+  var verdict = 'you lost!';
 
   if ( you == machine ) {
-    verdict = 'draw';
+    verdict = 'a draw!';
   }
 
   if ((you == "rock") && (machine == "scissors")) {
-    verdict = 'win';
+    verdict = 'you won!';
   }
 
   if ((you == "paper") && (machine == "rock")) {
-    verdict = 'win';
+    verdict = 'you won!';
   }
 
   if ((you == "scissors") && (machine == "paper")) {
-    verdict = 'win';
+    verdict = 'you won!';
   }
 
-  if ( verdict == 'win') {
+  if ( verdict == 'you won!') {
     won++;
     $("#game_won").text(won);
   }
 
-  if ( verdict == 'lose') {
+  if ( verdict == 'you lost!') {
     lost++;
     $("#game_lost").text(lost);
   }
-  if ( verdict == 'draw') {
+  if ( verdict == 'a draw!') {
     draw++;
     $("#game_drawn").text(draw);
   }
