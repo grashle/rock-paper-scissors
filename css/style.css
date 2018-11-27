@@ -1,8 +1,16 @@
 #main {
  background-color: white;
+ max-width: 70%;
 }
 p {
  color: purple;
+
+
+}
+
+.col-4 p {
+  display: block;
+  text-align: center;
 }
 button {
  border-radius: 50%;
