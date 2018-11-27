@@ -6,6 +6,10 @@ p {
  color: purple;
 }
 
+h1, h5 {
+  font-family: 'Ubuntu', sans-serif;
+
+}
 .col-md-4 p {
   display: block;
   text-align: center;
